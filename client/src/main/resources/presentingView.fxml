@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.PresentingController">
+    <children>
+        <AnchorPane prefHeight="540.0" prefWidth="960.0" stylesheets="@presenting.css">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" stroke="TRANSPARENT" strokeType="INSIDE" width="960.0" />
+                <Button fx:id="leave" layoutX="818.0" layoutY="12.0" mnemonicParsing="false" onAction="#leave" prefHeight="36.0" prefWidth="120.0" text="Leave" />
+                <ListView fx:id="questions" layoutX="400.0" layoutY="110.0" prefHeight="410.0" prefWidth="538.0" />
+                <Button fx:id="toBrowsing" layoutX="684.0" layoutY="12.0" mnemonicParsing="false" onAction="#toBrowsing" prefHeight="36.0" prefWidth="120.0" text="Browsing view" />
+                <Button fx:id="refresh" layoutX="882.0" layoutY="80.0" mnemonicParsing="false" onAction="#getTopQuestions" text="Refresh" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d1e9ff" height="202.0" layoutX="11.0" layoutY="110.0" stroke="TRANSPARENT" strokeType="INSIDE" width="365.0" />
+                <TextField fx:id="roomId" layoutX="131.0" layoutY="19.0" prefHeight="26.0" prefWidth="88.0" promptText="roomID" />
+            <Button fx:id="getRoomId" layoutX="231.0" layoutY="19.0" mnemonicParsing="false" onAction="#getRoomId" text="Get ID" />
+            <Button fx:id="mark" layoutX="833.0" layoutY="80.0" mnemonicParsing="false" onAction="#markAsAnswered" text="Mark" />
+            <ImageView fx:id="imageName" fitHeight="44.0" fitWidth="110.0" layoutX="8.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@TU_Delft_logo_wit2.png" />
+               </image></ImageView>
+            <Label fx:id="tooSlow" layoutX="45.0" layoutY="188.0" prefHeight="18.0" prefWidth="50.0" text="Too Slow">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets right="-7.0" top="1.0" />
+               </padding></Label>
+            <Label fx:id="tooFast" layoutX="239.0" layoutY="188.0" prefHeight="18.0" prefWidth="56.0" text="Too Fast">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="tooSlowCount" layoutX="63.0" layoutY="155.0" prefHeight="19.0" prefWidth="4.0" />
+            <Label fx:id="tooFastCount" layoutX="256.0" layoutY="155.0" prefHeight="19.0" prefWidth="4.0" />
+            <Label layoutX="24.0" layoutY="117.0" text="Lecture Pace:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="delete" layoutX="400.0" layoutY="80.0" mnemonicParsing="false" onAction="#deleteQuestion" text="Delete" />
+            <Button fx:id="enableJoin" layoutX="10.0" layoutY="330.0" mnemonicParsing="false" onAction="#enableJoin" prefHeight="26.0" prefWidth="110.0" text="Open room" />
+            <Button fx:id="download" layoutX="10.0" layoutY="493.0" mnemonicParsing="false" onAction="#downloadQuestions" prefHeight="26.0" prefWidth="110.0" text="Download" />
+            <TextField fx:id="modCode" layoutX="301.0" layoutY="19.0" prefHeight="26.0" prefWidth="88.0" promptText="roomID" />
+            <Button fx:id="getMod" layoutX="403.0" layoutY="18.0" mnemonicParsing="false" onAction="#getModCode" text="Get Mod" />
+            <Button fx:id="closeRoom" layoutX="131.0" layoutY="330.0" mnemonicParsing="false" onAction="#closeRoom" prefHeight="24.0" prefWidth="110.0" text="Close room" textFill="#161313" />
+            </children></AnchorPane>
+    </children>
+</VBox>

@@ -1,0 +1,99 @@
+.list-cell
+{
+  -fx-font: 18pt "Arial";
+  -fx-cell-size: 80;
+}
+
+.list-cell:selected
+{
+    -fx-cell-size: 150 ;
+}
+#leave
+{
+    -fx-background-color: crimson;
+    -fx-text-fill: white;
+    -fx-background-radius: 5,5,4;
+    -fx-background-insets: 0 0 -1 0,0,1;
+}
+#toBrowsing
+{
+    -fx-background-color: MidnightBlue;
+    -fx-text-fill: white;
+    -fx-background-radius: 5,5,4;
+    -fx-background-insets: 0 0 -1 0,0,1;
+}
+
+.button:hover
+{
+    -fx-background-color: transparent;
+    -fx-opacity: 0.6;
+}
+
+.button:pressed:hover
+{
+    -fx-opacity: 0.6;
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+#mark
+{
+    -fx-background-color: LightGray;
+}
+
+#refresh
+{
+    -fx-background-color: LightGray;
+}
+
+#delete
+{
+    -fx-background-color: LightGray;
+}
+
+#getRoomId
+{
+    -fx-background-color: LightGray;
+}
+
+#getMod
+{
+    -fx-background-color: LightGray;
+}
+#enableJoin
+{
+    -fx-background-color: LightGreen;
+}
+#download
+{
+    -fx-background-color: LightGray;
+}
+#tooSlow
+{
+    -fx-font-weight: 100;
+}
+
+#tooFast
+{
+    -fx-font-weight: 100;
+}
+
+#tooSlowCount
+{
+    -fx-font: 18pt "Arial";
+    -fx-font-weight: bold;
+}
+
+#tooFastCount
+{
+    -fx-font: 18pt "Arial";
+    -fx-font-weight: bold;
+}
+
+#closeRoom
+{
+    -fx-background-color: crimson;
+    -fx-text-fill: white;
+    -fx-background-radius: 5,5,4;
+    -fx-background-insets: 0 0 -1 0,0,1;
+}

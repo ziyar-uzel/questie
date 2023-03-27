@@ -1,0 +1,43 @@
+#leave
+{
+    -fx-background-color: crimson;
+    -fx-text-fill: white;
+    -fx-background-radius: 5,5,4;
+    -fx-background-insets: 0 0 -1 0,0,1;
+}
+
+#toPresenting
+{
+    -fx-background-color: MidnightBlue;
+    -fx-text-fill: white;
+    -fx-background-radius: 5,5,4;
+    -fx-background-insets: 0 0 -1 0,0,1;
+}
+
+.button:hover
+{
+    -fx-background-color: transparent;
+    -fx-opacity: 0.6;
+}
+
+.button:pressed:hover
+{
+    -fx-opacity: 0.6;
+    -fx-scale-y: 0.9;
+    -fx-scale-x: 0.9;
+}
+
+#refresh
+{
+    -fx-background-color: LightGray;
+}
+
+#delete
+{
+    -fx-background-color: LightGray;
+}
+
+#mark
+{
+    -fx-background-color: LightGray;
+}

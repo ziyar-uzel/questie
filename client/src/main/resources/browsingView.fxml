@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.BrowsingController">
+    <children>
+        <AnchorPane prefHeight="540.0" prefWidth="960.0" stylesheets="@browsing.css">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" stroke="TRANSPARENT" strokeType="INSIDE" width="960.0" />
+                <Button fx:id="leave" layoutX="818.0" layoutY="12.0" mnemonicParsing="false" onAction="#leave" prefHeight="36.0" prefWidth="120.0" text="Leave" />
+                <ListView fx:id="questions" layoutX="24.0" layoutY="110.0" prefHeight="412.0" prefWidth="914.0" />
+                <Button fx:id="toPresenting" layoutX="684.0" layoutY="12.0" mnemonicParsing="false" onAction="#toPresenting" prefHeight="36.0" prefWidth="120.0" text="Presenting View" />
+                <Button fx:id="refresh" layoutX="546.0" layoutY="80.0" mnemonicParsing="false" text="Refresh" />
+            <ImageView fx:id="imageName" fitHeight="49.0" fitWidth="110.0" layoutX="24.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@TU_Delft_logo_wit2.png" />
+               </image></ImageView>
+            <Button fx:id="delete" layoutX="484.0" layoutY="80.0" mnemonicParsing="false" onAction="#deleteQuestion" text="Delete" />
+            <Button fx:id="mark" layoutX="429.0" layoutY="80.0" mnemonicParsing="false" onAction="#markAsAnswered" text="Mark" />
+            <MenuButton fx:id="menuButton" alignment="CENTER" layoutX="612.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Sort by:" textAlignment="CENTER">
+              <items>
+                <MenuItem fx:id="m1" mnemonicParsing="false" text="Score" />
+                <MenuItem fx:id="m2" mnemonicParsing="false" text="Age" />
+                <MenuItem fx:id="m3" mnemonicParsing="false" text="Relevance" />
+              </items>
+            </MenuButton>
+            <CheckBox fx:id="checkbox" layoutX="768.0" layoutY="84.0" mnemonicParsing="false" selected="true" text="Include answered questions" textAlignment="RIGHT" />
+            <Button fx:id="banUser" layoutX="331.0" layoutY="80.0" mnemonicParsing="false" onAction="#banUserFromQuestion" text="Ban User" />
+            </children></AnchorPane>
+    </children>
+</VBox>

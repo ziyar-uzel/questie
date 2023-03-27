@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.controllers.StudentController">
+    <children>
+        <AnchorPane prefHeight="540.0" prefWidth="960.0" stylesheets="@student.css">
+         <children>
+            <Button fx:id="post" layoutX="70.0" layoutY="464.0" mnemonicParsing="false" onAction="#postQuestion" prefHeight="26.0" prefWidth="60.0" text="Post">
+               <font>
+                  <Font size="11.0" />
+               </font></Button>
+             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="60.0" stroke="#00000004" strokeType="INSIDE" width="960.0" />
+            <Button fx:id="leaveRoom" layoutX="822.0" layoutY="15.0" mnemonicParsing="false" onAction="#leaveRoom" prefHeight="34.0" prefWidth="99.0" text="Leave Room" />
+             <Text layoutX="65.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecture Pace:" />
+            <Separator layoutX="410.0" layoutY="83.0" orientation="VERTICAL" prefHeight="405.0" prefWidth="2.0" />
+            <Button fx:id="tooFast" layoutX="174.0" layoutY="134.0" mnemonicParsing="false" onAction="#slowDown" prefHeight="44.0" prefWidth="82.0" text="too fast!">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Button fx:id="tooSlow" layoutX="65.0" layoutY="134.0" mnemonicParsing="false" onAction="#speedUp" prefHeight="44.0" prefWidth="82.0" text="too slow!">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <ListView fx:id="questions" editable="false" layoutX="448.0" layoutY="131.0" prefHeight="360.0" prefWidth="462.0" />
+            <Button fx:id="refresh" layoutX="854.0" layoutY="98.0" mnemonicParsing="false" onAction="#getQuestions" text="Refresh" />
+            <Button fx:id="delete" layoutX="448.0" layoutY="99.0" mnemonicParsing="false" onAction="#deleteQuestion" text="Delete" />
+            <Button fx:id="upvote" layoutX="794.0" layoutY="98.0" mnemonicParsing="false" onAction="#upvoteQuestion" text="Upvote" />
+            <TextArea fx:id="questionToBePosted" layoutX="70.0" layoutY="266.0" prefHeight="174.0" prefWidth="308.0" promptText="Enter your question" wrapText="true" />
+            <ImageView fx:id="imageName" fitHeight="44.0" fitWidth="110.0" layoutX="15.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@TU_Delft_logo_wit2.png" />
+               </image></ImageView>
+            <ImageView fx:id="rabbit" fitHeight="24.0" fitWidth="37.0" layoutX="147.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" />
+         </children></AnchorPane>
+    </children>
+</VBox>
